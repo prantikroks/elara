@@ -1,0 +1,43 @@
+name: project_elara
+description: "Project Elara: The Adaptive Focus Companion."
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0' # Make sure you have a recent Flutter SDK
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # --- PROJECT ELARA DEPENDENCIES ---
+  provider: ^6.1.2            # For scalable state management
+  google_fonts: ^6.2.1        # For the "Inter" font family
+  flutter_animate: ^4.5.0     # For "luxury" physics-based animations
+  percent_indicator: ^4.2.3   # For the circular timer
+  collection: ^1.18.0         # For ListEquality in TodoProvider
+  cached_network_image: ^3.3.1  # For "Headspace" style image loading
+  shimmer: ^3.0.0             # For the animated gradient title
+  rive: ^0.13.0               # For the Pet Animation State Machine
+  # --- END DEPENDENCIES ---
+  
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # --- PROJECT ELARA ASSETS ---
+  assets:
+    - assets/pet.riv        # Add your Rive animation file here
+  # --- END ASSETS ---
